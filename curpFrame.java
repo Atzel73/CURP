@@ -223,6 +223,8 @@ public class curpFrame extends javax.swing.JFrame {
     String impresionar4;
     String impresionar5;
     String total;
+    String total2;
+    String resultadoFinal;
     private void btObtenerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btObtenerActionPerformed
 
         //Aquí se toman las cadenas de los TextField y se guardan en las variables ya declaradas
@@ -247,17 +249,17 @@ public class curpFrame extends javax.swing.JFrame {
         String resultadoMaternoUno = curp_inicialMaterno.getSecondName(CInMaterno);
 
         //Metodo del primer caracter del nombre
-        String resultadoNombre = curp_Nombre.getName(Cnombre);
-        
-        
-        
-        total = (resultadoPaternoUno + resultadoMaternoUno + resultadoNombre).toUpperCase();
+        String resultadoNombre = curp_Nombre.getName(Cnombre) ;
+ 
+       
         //Aquí va la llamada al método de las palabras
-        String resultadoFinal = metodoEnd.getTotal(total);
+        total = (resultadoPaternoUno + resultadoMaternoUno + resultadoNombre ).toUpperCase();
+        
+           resultadoFinal = (metodoEnd.getTotal(total) ).toUpperCase();
+    
+         
+           
         //Metodo para conseguir el sexo
-        
-        
-        
         
         String resultadoSexo = curp_Sexo.getSex(impresionar2);
 

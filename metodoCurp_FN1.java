@@ -69,6 +69,7 @@ public class metodoCurp_FN1 {
             } 
             
         }
+      
         
         
         Letters = String.valueOf(FN1) + SL;

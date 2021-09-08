@@ -1,3 +1,6 @@
+
+import static jdk.nashorn.internal.objects.NativeString.substring;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,23 +12,50 @@
  * @author Propietario
  */
 public class metodoEnd {
-     public static String getTotal(String fin){
-         String LettersEnd;
-         String Vtotal = fin;
-         char[] tempCharArray = fin.toCharArray();
-         if(fin.equals("CACA") || fin.equals("COLA") || fin.equals("PATAS")  || fin.equals("BAKA")  || fin.equals("VACA") || fin.equals("BUEY") || fin.equals("BUEI") || fin.equals("CACA") || fin.equals("CACO") || fin.equals("CAGA") || fin.equals("CAGO") || fin.equals("CAKA") || fin.equals("COGE") || fin.equals("COGI")  || fin.equals("COJA") || fin.equals("COJE") || fin.equals("COJI") || fin.equals("COJO") || fin.equals("CULO") || fin.equals("PALO") || fin.equals("FETO") || fin.equals("GETA") || fin.equals("JOTO") || fin.equals("KACA") || fin.equals("KACO") || fin.equals("KAGA") || fin.equals("KAGO") || fin.equals("KAKA") || fin.equals("KAKO") || fin.equals("KOGE") || fin.equals("KOGI") || fin.equals("KOJA") || fin.equals("KOJE") || fin.equals("KOJI") || fin.equals("KOJO") || fin.equals("KOLA") || fin.equals("KULO") || fin.equals("LILO") || fin.equals("LOCA") || fin.equals("LOCO") || fin.equals("LOKA") || fin.equals("LOKO") || fin.equals("MAME") || fin.equals("MAMO") || fin.equals("MEAR") || fin.equals("MEAS") || fin.equals("MEON") || fin.equals("MIAR") || fin.equals("MION") || fin.equals("MOCO") || fin.equals("MOKO") || fin.equals("MULA") || fin.equals("MULO") || fin.equals("NACA") || fin.equals("NACO") || fin.equals("PEDA") || fin.equals("PEDO") || fin.equals("PENE") || fin.equals("PIPI") || fin.equals("PITO") || fin.equals("POPO") || fin.equals("PUTA") || fin.equals("PUTO") || fin.equals("QULO") || fin.equals("RATA") || fin.equals("ROBA") || fin.equals("ROBE") || fin.equals("ROBO") || fin.equals("RUIN") || fin.equals("SENO") || Vtotal.equals("TETA") || fin.equals("VAGA") || fin.equals("VAGO") || fin.equals("VAKA") || fin.equals("VUEI") || fin.equals("VUEY") || fin.equals("WUEI") || fin.equals("WUEY")){
-             
-             tempCharArray[1] = 'X';
-             fin = String.valueOf(tempCharArray);
-             
-             
-             
-         }
-         
-         
-         
-         
-         return LettersEnd = fin;
-     }
-     
+     public static String getTotal(String fin) {
+        String LettersEnd;
+        String Vtotal = fin;
+        String SE = " ";
+
+        if (Vtotal.equals("CACA")
+                || Vtotal.equals("COLA") || Vtotal.equals("PATAS")
+                || Vtotal.equals("BAKA") || Vtotal.equals("VACA") || Vtotal.equals("BUEY")
+                || Vtotal.equals("BUEI") || Vtotal.equals("CACA") || Vtotal.equals("CACO")
+                || Vtotal.equals("CAGA") || Vtotal.equals("CAGO") || Vtotal.equals("CAKA")
+                || Vtotal.equals("COGE") || Vtotal.equals("COGI") || Vtotal.equals("COJA")
+                || Vtotal.equals("COJE") || Vtotal.equals("COJI") || Vtotal.equals("COJO")
+                || Vtotal.equals("CULO") || Vtotal.equals("PALO") || Vtotal.equals("FETO")
+                || Vtotal.equals("GETA") || Vtotal.equals("JOTO") || Vtotal.equals("KACA")
+                || Vtotal.equals("KACO") || Vtotal.equals("KAGA") || Vtotal.equals("KAGO")
+                || Vtotal.equals("KAKA") || Vtotal.equals("KAKO") || Vtotal.equals("KOGE")
+                || Vtotal.equals("KOGI") || Vtotal.equals("KOJA") || Vtotal.equals("KOJE")
+                || Vtotal.equals("KOJI") || Vtotal.equals("KOJO") || Vtotal.equals("KOLA")
+                || Vtotal.equals("KULO") || Vtotal.equals("LILO") || Vtotal.equals("LOCA")
+                || Vtotal.equals("LOCO") || Vtotal.equals("LOKA") || Vtotal.equals("LOKO")
+                || Vtotal.equals("MAME") || Vtotal.equals("MAMO") || Vtotal.equals("MEAR")
+                || Vtotal.equals("MEAS") || Vtotal.equals("MEON") || Vtotal.equals("MIAR")
+                || Vtotal.equals("MION") || Vtotal.equals("MOCO") || Vtotal.equals("MOKO")
+                || Vtotal.equals("MULA") || Vtotal.equals("MULO") || Vtotal.equals("NACA")
+                || Vtotal.equals("NACO") || Vtotal.equals("PEDA") || Vtotal.equals("PEDO")
+                || Vtotal.equals("PENE") || Vtotal.equals("PIPI") || Vtotal.equals("PITO")
+                || Vtotal.equals("POPO") || Vtotal.equals("PUTA") || Vtotal.equals("PUTO")
+                || Vtotal.equals("QULO") || Vtotal.equals("RATA") || Vtotal.equals("ROBA")
+                || Vtotal.equals("ROBE") || Vtotal.equals("ROBO") || Vtotal.equals("RUIN")
+                || Vtotal.equals("SENO") || Vtotal.equals("TETA") || Vtotal.equals("VAGA")
+                || Vtotal.equals("VAGO") || Vtotal.equals("VAKA") || Vtotal.equals("VUEI")
+                || Vtotal.equals("VUEY") || Vtotal.equals("WUEI") || Vtotal.equals("WUEY")) {
+
+            StringBuilder newString = new StringBuilder(Vtotal); 
+            newString.setCharAt(1, 'X'); 
+            
+
+            SE = newString.toString();
+            System.out.println( "ENTRÖ " + SE);
+        } else {
+            System.out.println("No entro");
+        }
+
+        return LettersEnd = SE;
+    }
+
 }
