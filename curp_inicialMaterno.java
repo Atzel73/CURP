@@ -20,9 +20,8 @@ public class curp_inicialMaterno {
         if( SN == 'ñ'){
             SN = 'x';
         } else if ( SN == ' '){
-            JOptionPane.showMessageDialog(null, "No dejar espacios en blanco");
-        }
-        
+             JOptionPane.showMessageDialog(null, "No dejar espacios en blanco");
+        } 
         
         
         

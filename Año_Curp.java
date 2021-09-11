@@ -16,7 +16,11 @@ public class Año_Curp {
         char BY2 = arregloYear[3];
         String Letters8 ;
         
-        return Letters8 = String.valueOf(BY1) + String.valueOf(BY2);
+       
+        if(year.equals("SELECCIÓN")){
+            System.out.println("Por favor, seleccione un campo. ");
+        }
+         return Letters8 = String.valueOf(BY1) + String.valueOf(BY2);
     }
     
 }

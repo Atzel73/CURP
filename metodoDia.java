@@ -109,7 +109,9 @@ public class metodoDia {
         } else if (arregloDia[0] == 31){
             SD = "31";
             
-        } 
+        } else if (day.equals("SELECCIÓN") ){
+            System.out.println("Por favor, seleccione un campo");
+        }
         
         return Letters5 = String.valueOf(SD);
     

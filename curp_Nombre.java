@@ -22,7 +22,7 @@ public class curp_Nombre {
             ON = 'x';
         } else if ( ON == ' '){
             JOptionPane.showMessageDialog(null, "No dejar espacios en blanco");
-        }
+        } 
         
         
         return Letters4 = String.valueOf(ON);

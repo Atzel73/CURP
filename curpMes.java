@@ -41,7 +41,9 @@ class curpMes {
             SM = "11";
         }else if(Mes.equals("DICIEMBRE")){
             SM = "12";
-        } 
+        } else if(Mes.equals("SELECCIÓN")){
+            SM = "Por favor, seleccione un campo";
+        }
         return Letters9 = SM;
     }
     

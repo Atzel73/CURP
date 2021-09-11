@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -85,9 +88,9 @@ public class metodoEstado {
             SM = "YUC";
         }else if(Estado.equals("ZACATECAS")){
             SM = "ZAC";
-        }else if (Estado.equals("   ")){
-            SM = "No has elegido nada. Vulve a elegir";
-        }
+        }else if (Estado.equals("SELECCIÓN")){
+            JOptionPane.showMessageDialog(null, "Por favor, seleccione un campo. ");
+        } 
         return Letters9 = SM;
     }
     

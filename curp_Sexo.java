@@ -12,17 +12,19 @@ public class curp_Sexo {
     public static String getSex(String sexo){
   String Sexo = sexo;
         String SexLetters;
-       char SS = ' ';
+       String SS = " ";
         
         
         if(Sexo.equals("hombre")){
-            SS = 'H';
+            SS = "H";
         } else if(Sexo.equals("HOMBRE")){
-            SS = 'H';
+            SS = "H";
         } else if(Sexo.equals("mujer")){
-            SS = 'M';
+            SS = "M";
         }else if(Sexo.equals("MUJER")){
-            SS = 'H';
+            SS = "M";
+        } else if(Sexo.equals("SELECCIÓN")){
+            SS = "Por favor, seleccione un campo";
         }
     return SexLetters = String.valueOf(SS);
 }

@@ -22,7 +22,10 @@ public class metodoCurp_FN1 {
             FN1 = 'x';
         } else if ( FN1 == ' '){
             JOptionPane.showMessageDialog(null, "No dejar espacios en blanco");
-        }
+        } else if ( FN1 == 1 || FN1 == 2 || FN1 == 3 || FN1 == 4 || FN1 == 5 || FN1 == 6 || FN1 == 7 || FN1 == 8 || FN1 == 9 || FN1 == 0){
+            System.out.println("No dejar espacios en blanco");
+            
+        } 
         
         
         
@@ -66,7 +69,12 @@ public class metodoCurp_FN1 {
                 SL = "No dejar campos vacíos. ";
                break;
                 
-            } 
+            } else if ( arregloPaterno[i] == 1 || arregloPaterno[i] == 2 || arregloPaterno[i] == 3 || arregloPaterno[i] == 4 || arregloPaterno[i] == 5 || arregloPaterno[i] == 6 || arregloPaterno[i] == 7 || arregloPaterno[i] == 8 || arregloPaterno[i] == 9 || arregloPaterno[i] == 0){
+                
+                System.out.println("No dejar espacios en blanco");
+               break;
+                
+            }
             
         }
       

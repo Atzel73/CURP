@@ -53,6 +53,7 @@ public class metodoEnd {
             System.out.println( "ENTRÖ " + SE);
         } else {
             System.out.println("No entro");
+            SE = fin;
         }
 
         return LettersEnd = SE;

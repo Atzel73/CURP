@@ -178,10 +178,11 @@ public class curpFrame extends javax.swing.JFrame {
                     .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel5)))
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -213,9 +214,11 @@ public class curpFrame extends javax.swing.JFrame {
     String Cdia;
     String Cmes;
     String AñoC;
+    
     String ConPaterno;
     String ConMaterno;
     String ConNombre;
+    
     String Cestado;
     String impresionar1;
     String impresionar2;
@@ -223,7 +226,7 @@ public class curpFrame extends javax.swing.JFrame {
     String impresionar4;
     String impresionar5;
     String total;
-    String total2;
+    
     String resultadoFinal;
     private void btObtenerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btObtenerActionPerformed
 
@@ -254,9 +257,9 @@ public class curpFrame extends javax.swing.JFrame {
        
         //Aquí va la llamada al método de las palabras
         total = (resultadoPaternoUno + resultadoMaternoUno + resultadoNombre ).toUpperCase();
-        
+        System.out.println(total);
            resultadoFinal = (metodoEnd.getTotal(total) ).toUpperCase();
-    
+        System.out.println(resultadoFinal);
          
            
         //Metodo para conseguir el sexo
@@ -284,7 +287,7 @@ public class curpFrame extends javax.swing.JFrame {
         //Método para las entidades federativas
         String resultadoEstado = metodoEstado.getState(impresionar1);
 
-        txMostrar.setText(total + resultadoAño + resultadoMes + resultadoDia + resultadoSexo + resultadoEstado + resultadoCon1 + resultadoCon2 + resultadoCon3);
+        txMostrar.setText(resultadoFinal + resultadoAño + resultadoMes + resultadoDia + resultadoSexo + resultadoEstado + resultadoCon1 + resultadoCon2 + resultadoCon3);
     }//GEN-LAST:event_btObtenerActionPerformed
 
     private void txMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txMostrarActionPerformed
@@ -297,6 +300,12 @@ public class curpFrame extends javax.swing.JFrame {
         jbPaterno.setText(" ");
         jbMaterno.setText(" ");
         txMostrar.setText(" ");
+        //jComboBox1.removeAll();
+        //jComboBox2.removeAll();
+        //jComboBox3.removeAll();
+        //jComboBox4.removeAll();
+        //jComboBox5.removeAll();
+        //jComboBox6.removeAll();
     }//GEN-LAST:event_btxImpresionActionPerformed
 
     /**
